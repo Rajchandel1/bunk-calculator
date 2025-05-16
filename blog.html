@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Life Hacks, Memes & Student Tools - Bunk Calculator Blog</title>
+    <meta name="description" content="Discover the best college life hacks, hilarious college memes, and student tools like our bunk calculator to ace college life. Learn how to bunk classes smartly and chill hard!">
+    <meta name="keywords" content="college life hacks, college memes, bunk calculator, student tools, college life, funny college tips, student life hacks, bunk classes meme, college attendance hacks">
+    <meta name="author" content="Bunk Calculator Team">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="College Life Hacks & Memes - Bunk Calculator Blog">
+    <meta property="og:description" content="Get college life hacks, funny college memes, and the ultimate bunk calculator to skip classes smartly. Perfect for students who love to chill!">
+    <meta property="og:image" content="https://your-site-url.com/images/college-meme.jpg">
+    <meta property="og:url" content="https://your-site-url.com/blog.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="College Life Hacks & Memes - Bunk Calculator">
+    <meta name="twitter:description" content="Explore college life hacks, memes, and student tools like the bunk calculator to make college epic!">
+    <meta name="twitter:image" content="https://your-site-url.com/images/college-meme.jpg">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA4-ID"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR-GA4-ID');
+</script>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #222, #333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.main-section {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    animation: slideIn 0.5s ease;
+    margin: 2vh;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+}
+
+.intro, article p, article ul {
+    font-size: 1.1rem;
+    color: #34495e;
+    line-height: 1.7;
+}
+
+article ul {
+    list-style: none;
+    padding: 0;
+}
+
+article ul li {
+    margin: 0.75rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+article ul li::before {
+    content: '🔥';
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vh;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background: #f1f3f5;
+    font-size: 1rem;
+    color: #2c3e50;
+    transition: background 0.3s;
+}
+
+input:focus {
+    outline: none;
+    background: #e8ecef;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    color: #34495e;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background: #00b894;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #009975;
+    transform: translateY(-2px);
+}
+
+.preset-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.preset-btn {
+    background: #dfe6e9;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #2c3e50;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.preset-btn:hover {
+    background: #74b9ff;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.preset-btn.active {
+    background: #0984e3;
+    color: #fff;
+}
+
+.reset-btn {
+    background: #ff7675;
+    margin-top: 1rem;
+}
+
+.reset-btn:hover {
+    background: #d32f2f;
+}
+
+.message-box {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #f1f3f5;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.error {
+    background: #ff7675;
+    color: #fff;
+}
+
+.warning {
+    background: #fdcb6e;
+    color: #2c3e50;
+}
+
+.success {
+    background: #55efc4;
+    color: #2c3e50;
+}
+
+.blog-post {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+}
+
+.content-image:hover {
+    transform: scale(1.05);
+}
+
+.share-buttons {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.share-btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.share-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.share-btn.twitter {
+    background: #1da1f2;
+}
+
+.share-btn.twitter:hover {
+    background: #0d95e8;
+}
+
+.share-btn.facebook {
+    background: #3b5998;
+}
+
+.share-btn.facebook:hover {
+    background: #2f4379;
+}
+
+.share-btn.whatsapp {
+    background: #25d366;
+}
+
+.share-btn.whatsapp:hover {
+    background: #20b85a;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #00b894;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 2rem auto;
+    text-align: center;
+    transition: background 0.3s, transform 0.2s;
+    display: block;
+}
+
+.button:hover {
+    background: #009975;
+    transform: scale(1.05);
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+    font-size: 1.2rem;
+    padding: 1.2rem 2.5rem;
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, #ff8e53, #ff6b6b);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 400px) {
+    .main-section {
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .intro, article p, article ul {
+        font-size: 1rem;
+    }
+    .blog-post {
+        padding: 1rem;
+    }
+    .share-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    .button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "College Life Hacks, Memes & Student Tools",
+        "description": "Discover college life hacks, hilarious college memes, and student tools like our bunk calculator to ace college life.",
+        "author": {
+            "@type": "Organization",
+            "name": "Bunk Calculator Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Bunk Calculator",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://your-site-url.com/images/logo.png"
+            }
+        },
+        "datePublished": "2025-05-15",
+        "dateModified": "2025-05-15",
+        "image": "https://your-site-url.com/images/college-meme.jpg",
+        "url": "https://your-site-url.com/blog.html",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://your-site-url.com/blog.html"
+        },
+        "keywords": "college life hacks, college memes, bunk calculator, student tools"
+    }
+    </script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="main-section">
+                <h1>🎉 College Life Hacks, Memes & Student Tools</h1>
+                <p class="intro">Welcome to the <strong>Bunk Calculator Blog</strong>! Whether you’re dodging classes or acing exams, we’ve got the best <strong>college life hacks</strong>, <strong>funny college memes</strong>, and <strong>student tools</strong> to make your college life epic. Start with our <a href="index.html" title="Bunk Calculator">bunk calculator</a> to skip classes smartly! 😎</p>
+
+                <article class="blog-post">
+                    <h2>Top 5 College Life Hacks to Survive Your Semester</h2>
+                    <img src="images/college-hacks.jpg" alt="College life hacks for students" class="content-image">
+                    <p>College is a wild mix of classes, parties, and last-minute assignments. These <strong>college life hacks</strong> will help you thrive while keeping the fun alive:</p>
+                    <ul>
+                        <li><strong>Bunk Smart with a Bunk Calculator</strong>: Use our <a href="index.html" title="College Bunk Calculator">bunk calculator</a> to figure out how many classes you can skip and still hit your attendance goal. No more attendance stress! 🚀</li>
+                        <li><strong>Pomodoro Power</strong>: Study in 25-minute bursts with 5-minute breaks to stay focused and avoid burnout.</li>
+                        <li><strong>Group Chat Goals</strong>: Join WhatsApp or Discord groups to share notes and updates—perfect for when you bunk! 😜</li>
+                        <li><strong>Meal Prep Like a Pro</strong>: Cook meals in bulk on weekends to save time and cash for coffee runs.</li>
+                        <li><strong>Meme Breaks</strong>: Follow <strong>college memes</strong> on Instagram for a quick laugh between study sessions.</li>
+                    </ul>
+                    <p>Ready to bunk like a pro? Try our <a href="index.html" title="Attendance Calculator for Students">college bunk calculator</a> now and plan your chill time!</p>
+                </article>
+
+                <article class="blog-post">
+                    <h2>The Best College Memes About Bunking Classes</h2>
+                    <img src="images/bunk-meme.jpg" alt="Funny college meme about bunking classes" class="content-image">
+                    <p>Nothing captures <strong>college life</strong> like a good meme! Here are our favorite <strong>college memes</strong> about bunking classes that’ll have you LOLing:</p>
+                    <ul>
+                        <li>“When you bunk class but still get the notes” 🥳 <em>(Cue the victory dance!)</em></li>
+                        <li>“Me checking attendance: *opens bunk calculator*” 😎 <em>(Smart move, bro!)</em></li>
+                        <li>“Professor: ‘Attendance is mandatory!’ Me: *plans bunk with calculator*” 😜</li>
+                    </ul>
+                    <p>Love these <strong>bunk classes memes</strong>? Share them with your squad and use our <a href="index.html" title="Funny College Attendance Tool">bunk calculator</a> to plan your next skip! 🚀</p>
+                    <div class="share-buttons">
+                        <a href="https://twitter.com/intent/tweet?text=Check out these hilarious college memes and the bunk calculator!&url=https://your-site-url.com/blog.html" target="_blank" class="share-btn twitter">Share on Twitter</a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://your-site-url.com/blog.html" target="_blank" class="share-btn facebook">Share on Facebook</a>
+                        <a href="https://api.whatsapp.com/send?text=Check out these epic college memes and the bunk calculator! 😎 https://your-site-url.com/blog.html" target="_blank" class="share-btn whatsapp">Share on WhatsApp</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <h2>What is a Bunk Calculator? Your Ultimate College Tool</h2>
+                    <img src="images/bunk-calculator.jpg" alt="Bunk calculator for college students" class="content-image">
+                    <p>Ever wondered, “<em>How many classes can I skip?</em>” Our <strong>bunk calculator</strong> is the ultimate <strong>student tool</strong> to answer that! Enter your total classes, attended classes, and desired attendance percentage, and it’ll tell you how many classes you can bunk—or if you need to attend more. 😬</p>
+                    <p>Why it’s a game-changer for <strong>college life</strong>:</p>
+                    <ul>
+                        <li><strong>Stress-Free</strong>: Plan your bunks without risking your attendance.</li>
+                        <li><strong>Fun Vibes</strong>: Get results with a chill, student-friendly interface.</li>
+                        <li><strong>Shareable</strong>: Show off your bunk count with friends for laughs!</li>
+                    </ul>
+                    <p>Don’t guess—calculate! Head to our <a href="index.html" title="College Attendance Calculator">bunk calculator</a> and start bunking smart. 🥳</p>
+                </article>
+
+                <a href="index.html" class="button cta-button">Try the Bunk Calculator Now! 🚀</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
