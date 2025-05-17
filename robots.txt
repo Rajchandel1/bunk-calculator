@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bunk-calculator-xi.vercel.app/sitemap.xml
