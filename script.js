@@ -56,21 +56,21 @@ form.addEventListener("submit",(e)=>{
     
     if(isNaN(ValTotal) || isNaN(ValAttend) || isNaN(ValPercent)){
             message.style.display = "block"
-            message.innerHTML = "bro kuch enter krega fir calculate hoga na kuch!"
+            message.innerHTML = "bro, enter something to calculate!"
             message.classList.add("warning")
             return;
     }
 
     if(ValTotal < ValAttend){
         message.style.display = "block"
-        message.innerHTML = "bro total classes attended classes se zyada kaise hogi"
+        message.innerHTML = "well, how total classes can be more then attended classes, genius!😜"
         message.classList.add("warning")
         return;
     }
     
     if(ValPercent < 0 || ValPercent > 100){
         message.style.display = "block"
-        message.innerHTML = "percentage to 0-100 ke bich me hota hai na yaar"
+        message.innerHTML = "percentage will be between 0-100 right!"
         message.classList.add("warning")
         return;
     }
@@ -90,12 +90,21 @@ function calculateBunks(){
     message.style.display = "block"
     ClassesNeeded = Math.ceil((ValPercent*ValTotal)/100 - ValAttend);
       message.classList.add("error")
-        message.innerHTML = `bro tu abhi ${currentAttendence}% pe hai tujhe atleast ${ClassesNeeded} classes aur attend krni padegi ${ValPercent}% hit krne ke liye`
+        message.innerHTML = `
+        You need to attend ${ClassesNeeded} more lectures! 💪
+Current Attendance: ${ValAttend}/${ValTotal} -> ${currentAttendence}%
+<br>
+Better hit the books! 📚`
       
     }else{
     message.style.display = "block"
     Bunkable = Math.floor(ValAttend - (ValPercent * ValTotal) / 100);
-   message.innerHTML = `Chill kr yaar ${currentAttendence}% hai teri attendence! aur tu ${Bunkable} classes bunk bhi kr skta hai!`
+   message.innerHTML = `You can bunk ${Bunkable} more lectures! 🎉
+Current Attendance: ${ValAttend}/${ValTotal} -> ${currentAttendence}%
+<br>
+Go enjoy your time! 😎
+
+`
     message.classList.add("success")
 }
     
